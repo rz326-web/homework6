@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first webpage :3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Updated to be bootstrap and color gradient -->
+    <header class="site-header bg-gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- added font -->
+                    <h1 class="display-5 fw-bold">My uber cool first page</h1>
+                    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#main-navigation" aria-controls="main-navigation"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="main-navigation">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        <div class="row g-4">
+            <aside class="sidebar col-12 col-lg-4">
+                <h2 class="h4 fw-semibold">Summary, Education, Skills</h2>
+                <h3 class="h5 fw-semibold">My Education</h3>
+                <!-- Bootstrap the sidebar. -->
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col">Status</th>
+                                <th scope="col">Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CSS-121</td>
+                                <td>Passed</td>
+                            </tr>
+                            <tr>
+                                <td>CS-212</td>
+                                <td>Ongoing</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="h5 fw-semibold">My Skills</h3>
+                <!-- mo cards -->
+                <div class="row row-cols-2 g-2 mb-3">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title h6 fw-semibold mb-0">Python</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title h6 fw-semibold mb-0">HTML</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bootstraped the download -->
+                <form method="get" action="Links&downloads/RZ-Resume.pdf">
+                    <button class="btn btn-primary fw-semibold" type="submit">Download the resume</button>
+                </form>
+            </aside>
+
+            <div class="main-content col-12 col-lg-8">
+                <div class="row g-4">
+                    <section class="intro-section col-12" id="intro">
+                        <h2 class="h4 fw-semibold">Intro to Me</h2>
+                        <p class="lead">
+                            Hai, I'm <strong><em>Riley.</em></strong>
+                            Currently a junior student here and I'm currently going for a
+                            <b>Immersive Media &amp; Games Degree</b>
+                            here and I only done the Class before this one and wanting to learn more about coding since
+                            I really want to make games as a Hobby.
+                        </p>
+                        <img src="Images&downloads/20201015_154614.jpg" alt="Only photo of me that I like."
+                            height="200" width="160" />
+                    </section>
+
+                    <section class="education-section col-12 col-md-6" id="education">
+                        <h2 class="h4 fw-semibold">My Education</h2>
+                        <!-- Bootstrap table added. -->
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped align-middle">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Class</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>CSS-121</td>
+                                        <td>Passed</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CS-212</td>
+                                        <td>Ongoing</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="skills-section col-12 col-md-6" id="skills">
+                        <h2 class="h4 fw-semibold">My Skills</h2>
+                        <!-- Bootstrap cards added here -->
+                        <div class="row row-cols-1 row-cols-sm-2 g-3">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title h5 fw-semibold">Python</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="card-title h5 fw-semibold">HTML</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="projects col-12" id="projects">
+                        <h2 class="h4 fw-semibold">My Projects</h2>
+                        <!-- Bootstrap cards for step 2. -->
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6 col-xl-4">
+                                <div class="card project-card h-100">
+                                    <img class="card-img-top project-image" src="Images&downloads/bleh.png"
+                                        alt="A photo for my first project if i decied so" />
+                                    <div class="card-body">
+                                        <h3 class="card-title h5 fw-semibold">Project One</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-4">
+                                <div class="card project-card h-100">
+                                    <img class="card-img-top project-image" src="Images&downloads/bleh.png"
+                                        alt="A picture for my second project... nothin else to say" />
+                                    <div class="card-body">
+                                        <h3 class="card-title h5 fw-semibold">Project Two</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-4">
+                                <div class="card project-card h-100">
+                                    <img class="card-img-top project-image" src="Images&downloads/bleh.png"
+                                        alt="A photo for my third project if it existed, might update these with the previous versions" />
+                                    <div class="card-body">
+                                        <h3 class="card-title h5 fw-semibold">Project Three</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer bg-gradient text-white" id="contact">
+        <div class="container">
+            <div class="row align-items-center text-center g-2">
+                <div class="col-12 col-md-8">
+                    <h2 class="h4 fw-semibold">My Contact</h2>
+                    <p>You can reach me at my school email:
+                        <a href="mailto:rz326@nau.edu">rz326@nau.edu</a>
+                    </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="funnieimage" src="Images&downloads/bleh.png"
+                        alt="Still wanted to keep this image cuz its funny." />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
